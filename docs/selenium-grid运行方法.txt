@@ -1,0 +1,26 @@
+selenium-grid的下载地址：
+http://selenium-release.storage.googleapis.com/index.html
+http://selenium-release.storage.googleapis.com/index.html?path=2.43/
+
+介绍地址：
+https://github.com/SeleniumHQ/selenium/wiki/Grid2
+
+1. hub运行方式：
+java -jar /Users/wxd/soft/selenium/selenium-server-standalone-2.43.1.jar -role hub
+java -jar /Users/wangxudong1129/Desktop/soft/selenium/selenium-server-standalone-2.43.1.jar -role hub
+centos:
+java -jar /root/soft/selenium/selenium-server-standalone-2.43.1.jar -port 4444 -role hub
+
+修改端口：-port 4445
+打开网址：http://localhost:4444/grid/console
+
+
+2. node运行方式，用相同的jar文件：
+java -Dwebdriver.chrome.driver=/Users/wxd/soft/selenium/chromedriver243 -jar /Users/wxd/soft/selenium/selenium-server-standalone-2.43.1.jar -role node -hub http://localhost:4444/grid/register
+java -Dwebdriver.chrome.driver=/Users/wangxudong1129/Desktop/soft/selenium/chromedriver243 -jar /Users/wangxudong1129/Desktop/soft/selenium/selenium-server-standalone-2.43.1.jar -role node -hub http://localhost:4444/grid/register
+
+
+
+
+
+

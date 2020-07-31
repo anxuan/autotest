@@ -1,0 +1,11 @@
+查看apk的启动Activity:
+aapt dump badging 1.apk
+然后查看:
+package: name=’**’
+launchable-activity: name=**’
+
+
+导出本地数据库:
+mysqldump -uroot -proot auto_test > /tmp/auto_test_0104.sql
+mysqldump -uroot -pWxd888888\! auto_test > /tmp/auto_test_0104.sql
+

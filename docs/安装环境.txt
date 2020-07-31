@@ -1,0 +1,4 @@
+1. 安装python3.6.6版本
+2. 安装appium-desktop 1.10.0，找与系统相匹配的发布包
+3. 安装一个python库: pip3 install websocket-client==0.54.0
+   (需要先将python和pip的路径加到环境变量的path路径中)
