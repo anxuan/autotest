@@ -1,0 +1,26 @@
+金华压测的机器
+
+192.168.2.187
+192.168.5.205
+192.168.24.121
+192.168.25.150
+192.168.25.151
+192.168.28.132
+192.168.29.62
+
+执行命令:
+./goreplay --input-file "bbs.gor|10%" --output-http "https://bbs.mobileapi.hupu.com" --http-set-header "Bench: true" --http-disallow-url /*/*/recommend/getThreadsList --http-disallow-url /*/*/video/getDanmaku --http-disallow-url /*/*/video/hit --http-disallow-url /*/*/user/userPostsNew --stats --output-http-stats
+
+添加参数： -input-file-loop
+
+1000%代表放大10倍
+
+还有websocket的压测
+
+执行目录：
+/home/hwang/1.11
+
+需求：
+要能同时执行多个任务，一台机器要能同时跑多个命令，这样，开多个窗口时，各个窗口的任务都要能正确接收相应的输出
+不过这种情况 一个房主两个房
+
